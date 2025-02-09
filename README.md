@@ -5,11 +5,20 @@
 - **Phone:** +1-930-333-4115
 - **LinkedIn:** [linkedin.com/in/sarabesh](https://linkedin.com/in/sarabesh)
 
+---
+
 ## Projects
+
+### Multi-Robot Path Planning with Graph Neural Networks (01/2025 - Present)
+- Developing reinforcement learning-based approaches for multi-agent coordination by experimenting with PPO, TRPO, and VPG approaches.
+- Implementing graph-attention networks (transformers) for optimal path planning.
+- Building a simulator to model agent dynamics and a shared wireless communication medium.
+
 ### Image Reconstruction from Functional Magnetic Resonance Imaging (fMRI) (09/2024 - 12/2024)
 - Explored high-resolution image reconstruction from human brain activity using fMRI data.
 - Implemented a pipeline leveraging latent diffusion models trained on the Natural Scenes Dataset (NSD) and CLIP models for embeddings.
 - Experimented with decoding latent visual features to reconstruct images.
+  https://github.com/sarabesh/Neural-Recon
 
 ### Deep Visual Odometry (08/2024 - 12/2024)
 - Developed a deep learning pipeline for monocular visual odometry using sequential RGB images.
@@ -20,6 +29,9 @@
 - Conducted an in-depth study comparing Graph RAG and Vector RAG.
 - Employed Neo4j, LangChain pipelines, and Ollama for LLM execution.
 - Evaluated efficiency, scalability, and quality of retrieved information.
+  https://github.com/sarabesh/HybridRAG
+
+---
 
 ## Skills and Tools
 - **Artificial Intelligence, Deep Learning, Computer Vision, Reinforcement Learning, NLP, Generative AI**
@@ -32,6 +44,8 @@
 - **Operating Systems:** macOS, Linux, Windows
 - **Databases:** MySQL, RDS, DynamoDB
 
+---
+
 ## Education
 ### Master of Science in Data Science
 **Indiana University Bloomington – Luddy School of Informatics, Computing and Engineering** (08/2023 – 05/2025)
@@ -41,6 +55,8 @@
 ### Bachelor of Engineering in Computer Science
 **Anna University - Velammal Engineering College, Chennai, India** (07/2015 – 04/2019)
 - **CGPA:** 8.39/10.0
+
+---
 
 ## Work Experience
 ### Emerging Tech Intern, AI Specialist
