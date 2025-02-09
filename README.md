@@ -5,17 +5,7 @@
 - **Phone:** +1-930-333-4115
 - **LinkedIn:** [linkedin.com/in/sarabesh](https://linkedin.com/in/sarabesh)
 
-## Education
-### Master of Science in Data Science
-**Indiana University Bloomington – Luddy School of Informatics, Computing and Engineering** (08/2023 – 05/2025)
-- Relevant Coursework: Applied Machine Learning, Elements of Artificial Intelligence, Computer Vision, Natural Language Processing, Autonomous Robotics, Deep Learning Systems
-- **CGPA:** 3.90/4.00
-
-### Bachelor of Engineering in Computer Science
-**Anna University - Velammal Engineering College, Chennai, India** (07/2015 – 04/2019)
-- **CGPA:** 8.39/10.0
-
-## Relevant Projects
+## Projects
 ### Image Reconstruction from Functional Magnetic Resonance Imaging (fMRI) (09/2024 - 12/2024)
 - Explored high-resolution image reconstruction from human brain activity using fMRI data.
 - Implemented a pipeline leveraging latent diffusion models trained on the Natural Scenes Dataset (NSD) and CLIP models for embeddings.
@@ -30,6 +20,27 @@
 - Conducted an in-depth study comparing Graph RAG and Vector RAG.
 - Employed Neo4j, LangChain pipelines, and Ollama for LLM execution.
 - Evaluated efficiency, scalability, and quality of retrieved information.
+
+## Skills and Tools
+- **Artificial Intelligence, Deep Learning, Computer Vision, Reinforcement Learning, NLP, Generative AI**
+- **Programming Languages:** Java, Groovy, Golang, Python
+- **Development Frameworks:** Spring, Flask
+- **ML Libraries & Tools:** Scikit-learn, TensorFlow, PyTorch, HuggingFace, LangChain, MLflow, DVC, ROS2
+- **ML Models:** Transformers (ViT), LLM, Diffusion Models, BERT, GPT, LlaMa 2, RL models (DQN, PPO)
+- **Cloud Providers:** AWS
+- **DevOps Tools:** Docker, Kubernetes, VMware Tanzu, Terraform, Jenkins, Git, Concourse
+- **Operating Systems:** macOS, Linux, Windows
+- **Databases:** MySQL, RDS, DynamoDB
+
+## Education
+### Master of Science in Data Science
+**Indiana University Bloomington – Luddy School of Informatics, Computing and Engineering** (08/2023 – 05/2025)
+- Relevant Coursework: Applied Machine Learning, Elements of Artificial Intelligence, Computer Vision, Natural Language Processing, Autonomous Robotics, Deep Learning Systems
+- **CGPA:** 3.90/4.00
+
+### Bachelor of Engineering in Computer Science
+**Anna University - Velammal Engineering College, Chennai, India** (07/2015 – 04/2019)
+- **CGPA:** 8.39/10.0
 
 ## Work Experience
 ### Emerging Tech Intern, AI Specialist
@@ -60,16 +71,6 @@
 - **HashiCorp: Terraform Associate** (Expired 07/2021)
 - **AWS: Amazon Web Services Solutions Architect Associate** (Expired 02/2021)
 
-## Skills and Tools
-- **Artificial Intelligence, Deep Learning, Computer Vision, Reinforcement Learning, NLP, Generative AI**
-- **Programming Languages:** Java, Groovy, Golang, Python
-- **Development Frameworks:** Spring, Flask
-- **ML Libraries & Tools:** Scikit-learn, TensorFlow, PyTorch, HuggingFace, LangChain, MLflow, DVC, ROS2
-- **ML Models:** Transformers (ViT), LLM, Diffusion Models, BERT, GPT, LlaMa 2, RL models (DQN, PPO)
-- **Cloud Providers:** AWS
-- **DevOps Tools:** Docker, Kubernetes, VMware Tanzu, Terraform, Jenkins, Git, Concourse
-- **Operating Systems:** macOS, Linux, Windows
-- **Databases:** MySQL, RDS, DynamoDB
 
 ---
 
