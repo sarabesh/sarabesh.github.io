@@ -4,6 +4,7 @@
 - **Email:** sneelam@iu.edu
 - **Phone:** +1-930-333-4115
 - **LinkedIn:** [linkedin.com/in/sarabesh](https://linkedin.com/in/sarabesh)
+- **Medium:** [https://sarabesh.medium.com/](https://sarabesh.medium.com/)
 
 ---
 
