@@ -81,6 +81,8 @@
 - Enhanced Jenkins shared library functionality by integrating Slack, New Relic, and Sumo Logic.
 - Reduced troubleshooting time by 50% and expanded platform usage among teams.
 
+---
+
 ## Certifications
 - **CKA: Certified Kubernetes Security Specialist** (Expired 09/2021)
 - **CKA: Certified Kubernetes Administrator** (Expired 07/2021)
