@@ -1,6 +1,9 @@
 # add the following to _config.yml file
 title: Sarabesh Neelamegham Ravindranath
+description: AI/ Machine Learning / DevOps / Cloud engineer
+show_downloads: "true"
+
 #theme: jeykll-theme-minimal
-remote_theme: pages-themes/dinky@v0.2.0
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
