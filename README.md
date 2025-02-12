@@ -19,7 +19,7 @@
 - Explored high-resolution image reconstruction from human brain activity using fMRI data.
 - Implemented a pipeline leveraging latent diffusion models trained on the Natural Scenes Dataset (NSD) and CLIP models for embeddings.
 - Experimented with decoding latent visual features to reconstruct images.
-  https://github.com/sarabesh/Neural-Recon
+  [Neural recon](https://github.com/sarabesh/Neural-Recon)
 
 ### Deep Visual Odometry (08/2024 - 12/2024)
 - Developed a deep learning pipeline for monocular visual odometry using sequential RGB images.
@@ -30,7 +30,7 @@
 - Conducted an in-depth study comparing Graph RAG and Vector RAG.
 - Employed Neo4j, LangChain pipelines, and Ollama for LLM execution.
 - Evaluated efficiency, scalability, and quality of retrieved information.
-  https://github.com/sarabesh/HybridRAG
+  [HybridRAG](https://github.com/sarabesh/HybridRAG)
 
 ---
 
