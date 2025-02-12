@@ -15,22 +15,22 @@
 - Implementing graph-attention networks (transformers) for optimal path planning.
 - Building a simulator to model agent dynamics and a shared wireless communication medium.
 
-### Image Reconstruction from Functional Magnetic Resonance Imaging (fMRI) (09/2024 - 12/2024)
+### Image Reconstruction from Functional Magnetic Resonance Imaging (fMRI) (09/2024 - 12/2024) - [View Code](https://github.com/sarabesh/Neural-Recon)
 - Explored high-resolution image reconstruction from human brain activity using fMRI data.
 - Implemented a pipeline leveraging latent diffusion models trained on the Natural Scenes Dataset (NSD) and CLIP models for embeddings.
 - Experimented with decoding latent visual features to reconstruct images.
-  [Neural recon](https://github.com/sarabesh/Neural-Recon)
+  
 
 ### Deep Visual Odometry (08/2024 - 12/2024)
 - Developed a deep learning pipeline for monocular visual odometry using sequential RGB images.
 - Integrated convolutional and recurrent neural networks (CNN-LSTM) for pose estimation.
 - Reconstructed and improved the model from the paper "DeepVO."
 
-### Comparison of Retrieval-Augmented Generation (RAG) Systems (08/2024 - 12/2024)
+### Comparison of Retrieval-Augmented Generation (RAG) Systems (08/2024 - 12/2024) - [View Code](https://github.com/sarabesh/HybridRAG)
 - Conducted an in-depth study comparing Graph RAG and Vector RAG.
 - Employed Neo4j, LangChain pipelines, and Ollama for LLM execution.
 - Evaluated efficiency, scalability, and quality of retrieved information.
-  [HybridRAG](https://github.com/sarabesh/HybridRAG)
+  
 
 ---
 
