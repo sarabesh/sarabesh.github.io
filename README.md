@@ -84,12 +84,3 @@
 
 ---
 
-## Certifications
-- **CKA: Certified Kubernetes Security Specialist** (Expired 09/2021)
-- **CKA: Certified Kubernetes Administrator** (Expired 07/2021)
-- **HashiCorp: Terraform Associate** (Expired 07/2021)
-- **AWS: Amazon Web Services Solutions Architect Associate** (Expired 02/2021)
-
-
----
-
