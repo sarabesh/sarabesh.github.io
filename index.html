@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Sarabesh" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Sarabesh Ravi">Sarabesh Ravi</h1>
+
+          <p class="title" style="margin-bottom: 4px;">Data Science Grad Student</p>
+          <p class="title" style="margin-bottom: 4px;">AI/ML Engineer</p>
+          <p class="title" style="margin-bottom: 4px;">MlOps Engineer</p>
+          <p class="title" style="margin-bottom: 4px;">DevOps Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:sneelam@iu.edu" class="contact-link">sneelam@iu.edu</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+1-9303334115" class="contact-link">+1 (930) 333-4115</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Bloomington, Indiana, USA</address>
+            </div>
+
+          </li>
+
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/sarabesh/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/sarabesh" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://sarabesh.medium.com/" class="social-link">
+              <ion-icon name="logo-medium"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a Data Science master's student from Indiana University Bloomington, passionate about Machine Learning, Artificial Intelligence, and Reinforcement Learning. I enjoy transforming complex algorithms into real-world, impactful solutions.
+          </p>
+
+          <p>
+            My work focuses on building intelligent systems that are not only powerful but also practical and efficient. I add a personal touch to every project, ensuring they are innovative and easy to understand. My goal is to turn ideas into working models that push the boundaries of AI. I've worked on advanced projects in computer vision, NLP, and multi-agent systems, creating solutions that make a difference.          </p>
+
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/ml-icon.svg" alt="ML icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning</h4>
+
+                <p class="service-item-text">
+                  Building intelligent systems that solve real-world problems using data-driven approaches.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/devcloud-icon.svg" alt="Cloud DevOps icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">DevOps & Cloud Engineering</h4>
+
+                <p class="service-item-text">
+                  Automating workflows and deploying scalable AI/ML solutions in cloud environments.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Software Development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Software Development</h4>
+
+                <p class="service-item-text">
+                  Developing reliable and efficient software solutions across various domains.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/research-icon.svg" alt="Research icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Research & Innovation</h4>
+
+                <p class="service-item-text">
+                  Exploring advanced topics like reinforcement learning and multimodal LLMs to push the boundaries of AI.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+       
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        
+
+      </article>
+
+
+
+
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <div style="margin-bottom: 20px;">
+          <a href="./assets/resume/Sarabesh_Neelamegham_Ravindranath_April_2025_ML_exp.pdf" download class="form-btn" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; background-color: var(--primary); color: white; border-radius: 8px; text-decoration: none;">
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Download Resume</span>
+          </a>
+        </div>
+      
+        <!-- Education Section -->
+        <section class="timeline">
+      
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+      
+            <h3 class="h3">Education</h3>
+          </div>
+      
+          <ol class="timeline-list">
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Indiana University Bloomington</h4>
+              <span>Aug 2023 — May 2025</span>
+              <p class="timeline-text">
+                Master of Science in Data Science — CGPA: 3.90/4.00<br>
+                Relevant Coursework: Applied ML, AI, Statistics, Computer Vision, NLP, Robotics, Deep Learning Systems.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Anna University</h4>
+              <span>May 2015 — June 2019</span>
+              <p class="timeline-text">
+                Bachelor of Engineering in Computer Science and Engineering — CGPA: 8.34/10.00<br>
+              </p>
+            </li>
+      
+          </ol>
+      
+        </section>
+      
+        <!-- Experience Section -->
+        <section class="timeline">
+      
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+      
+            <h3 class="h3">Experience</h3>
+          </div>
+      
+          <ol class="timeline-list">
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Faculty Assistant - Data Science, IU School of Optometry</h4>
+              <span>Jan 2025 — Present</span>
+              <p class="timeline-text">
+                Facilitated data analysis for the Walking Project, optimizing 3D terrain reconstruction workflows and reducing model time by 25%.
+              </p>
+            </li>
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Emerging Tech Intern, AI Specialist - Musco Lighting</h4>
+              <span>May 2024 — Aug 2024</span>
+              <p class="timeline-text">
+                Built MLOps framework with DVC & GitLab CI, cutting model deployment time by 40%. Integrated YOLOv5 and MLflow for automated tracking across 5+ projects.
+              </p>
+            </li>
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">DevOps Engineer, MTS II - VMware</h4>
+              <span>Feb 2022 — Jun 2023</span>
+              <p class="timeline-text">
+                Automated TAP cloud installations (EKS, TKGM, TKGS) and improved test coverage from 20% to 75% in the GO e2e framework.
+              </p>
+            </li>
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Cloud Engineer - Presidio</h4>
+              <span>May 2019 — Jan 2022</span>
+              <p class="timeline-text">
+                Designed CI/CD pipelines with Jenkins & GitHub Actions; implemented Terraform on AWS for clients like ViacomCBS & Wex.
+              </p>
+            </li>
+      
+          </ol>
+      
+        </section>
+      
+        <!-- Projects Section
+        <section class="timeline">
+      
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </div>
+      
+            <h3 class="h3">Projects</h3>
+          </div>
+      
+          <ol class="timeline-list">
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Multi-Robot Path Planning with Graph Neural Networks</h4>
+              <span>Jan 2025 — Present</span>
+              <p class="timeline-text">
+                Developed decentralized RL coordination for multi-robot scenarios. Enhanced with imitation learning and PPO for dynamic environments.
+              </p>
+            </li>
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Image Reconstruction from fMRI</h4>
+              <span>Sep 2024 — Dec 2024</span>
+              <p class="timeline-text">
+                Reconstructed high-res images from fMRI using latent diffusion and CLIP embeddings.
+                <a href="https://github.com/sarabesh/Neural-Recon" target="_blank">View Project</a>
+              </p>
+            </li>
+      
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Comparison of Retrieval-Augmented Generation Systems</h4>
+              <span>Aug 2024 — Dec 2024</span>
+              <p class="timeline-text">
+                Benchmarked Graph RAG vs Vector RAG using Neo4j, LangChain, and Ollama to evaluate retrieval and generation performance.
+                <a href="https://github.com/sarabesh/HybridRAG" target="_blank">View Project</a>
+              </p>
+            </li>
+      
+          </ol>
+      
+        </section> -->
+      
+        <!-- Skills Section -->
+        <section class="skill">
+      
+          <h3 class="h3 skills-title">My Skills</h3>
+      
+          <ul class="skills-list content-card">
+      
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Machine Learning & Deep Learning</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+      
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">MLOps & Cloud Engineering</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+      
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">DevOps & Automation</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+      
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Software Development</h5>
+                <data value="65">65%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+            </li>
+      
+          </ul>
+
+</section>
+<!-- Tech Stack Section -->
+<!-- Tech Stack Section -->
+<section class="skill">
+
+  <h3 class="h3 skills-title">Tech Stack & Tools</h3>
+
+  <ul class="skills-list content-card">
+
+    <li class="skills-item">
+      <div class="title-wrapper">
+        <ion-icon name="code-slash-outline" style="color: hsl(35, 100%, 68%); margin-right: 8px;"></ion-icon>
+        <h5 class="h4">Programming Languages</h5>
+      </div>
+      <p class="timeline-text">Java, Groovy, Golang, Python</p>
+    </li>
+
+    <li class="skills-item">
+      <div class="title-wrapper">
+        <ion-icon name="layers-outline" style="color: hsl(35, 100%, 68%); margin-right: 8px;"></ion-icon>
+        <h5 class="h4">Development Frameworks</h5>
+      </div>
+      <p class="timeline-text">Spring, Flask</p>
+    </li>
+
+    <li class="skills-item">
+      <div class="title-wrapper">
+        <ion-icon name="construct-outline" style="color: hsl(35, 100%, 68%); margin-right: 8px;"></ion-icon>
+        <h5 class="h4">ML Libraries & Tools</h5>
+      </div>
+      <p class="timeline-text">Scikit-learn, NumPy, TensorFlow, PyTorch, Hugging Face, LangChain, SpaCy, MLflow, DVC, ROS2, Open3D</p>
+    </li>
+
+    <li class="skills-item">
+      <div class="title-wrapper">
+        <ion-icon name="analytics-outline" style="color: hsl(35, 100%, 68%); margin-right: 8px;"></ion-icon>
+        <h5 class="h4">ML Models</h5>
+      </div>
+      <p class="timeline-text">Transformers (ViT), LLMs (BERT, GPT, LLaMA 2), Diffusion Models, RL Models (DQN, Vanilla Policy Gradients, PPO)</p>
+    </li>
+
+    <li class="skills-item">
+      <div class="title-wrapper">
+        <ion-icon name="cloud-outline" style="color: hsl(35, 100%, 68%); margin-right: 8px;"></ion-icon>
+        <h5 class="h4">Cloud Providers</h5>
+      </div>
+      <p class="timeline-text">AWS</p>
+    </li>
+
+    <li class="skills-item">
+      <div class="title-wrapper">
+        <ion-icon name="settings-outline" style="color: hsl(35, 100%, 68%); margin-right: 8px;"></ion-icon>
+        <h5 class="h4">DevOps Tools & Services</h5>
+      </div>
+      <p class="timeline-text">Docker, Kubernetes, VMware Tanzu, Terraform, CloudFormation, Chef, Helm, Jenkins, Git, Concourse, GitLab Pipelines</p>
+    </li>
+
+    <li class="skills-item">
+      <div class="title-wrapper">
+        <ion-icon name="desktop-outline" style="color: hsl(35, 100%, 68%); margin-right: 8px;"></ion-icon>
+        <h5 class="h4">Operating Systems</h5>
+      </div>
+      <p class="timeline-text">macOS, Linux, Windows</p>
+    </li>
+
+    <li class="skills-item">
+      <div class="title-wrapper">
+        <ion-icon name="server-outline" style="color: hsl(35, 100%, 68%); margin-right: 8px;"></ion-icon>
+        <h5 class="h4">Databases</h5>
+      </div>
+      <p class="timeline-text">MySQL, RDS, DynamoDB</p>
+    </li>
+
+  </ul>
+
+</section>
+      
+        </section>
+      
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>ML Systems</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Computer Vision</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>NLP/LLMs</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Reinforcement Learning</button>
+            </li>
+
+            <!-- <li class="filter-item">
+              <button data-filter-btn>Software Development</button>
+            </li> -->
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-select-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>ML Systems</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Computer Vision</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>NLP/LLMs</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Reinforcement Learning</button>
+              </li>
+
+              <!-- <li class="select-item">
+                <button data-select-item>Software Development</button>
+              </li> -->
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="reinforcement learning">
+              <a href="https://github.com/sarabesh/GridWorld-PPO">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/4-project.png" alt="grid" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">GridWorld-PPO</h3>
+
+                <p class="project-category">Reinforcement Learning</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="computer vision">
+              <a href="https://github.com/sarabesh/Neural-Recon">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/3-project.png" alt="neural-recon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Neural Reconstruction</h3>
+
+                <p class="project-category">Computer Vision</p>
+
+              </a>
+            </li>
+
+            
+            <li class="project-item  active" data-filter-item data-category="ml systems">
+              <a href="https://github.com/sarabesh/sentiment-analysis-finetuning-and-deployment">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/5-project.png" alt="finetuning-bert" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Sentiment Analysis API and Batch Inference</h3>
+
+                <p class="project-category">ML Systems</p>
+
+              </a>
+            </li>
+
+           
+
+            <li class="project-item  active" data-filter-item data-category="computer vision">
+              <a href="https://github.com/sarabesh/mono-cam-DeepVO">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/2-project.png" alt="DeepVO" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MonoCam DeepVO</h3>
+
+                <p class="project-category">Computer Vision</p>
+
+              </a>
+            </li>
+
+            
+            <li class="project-item  active" data-filter-item data-category="nlp/llms">
+              <a href="https://github.com/sarabesh/HybridRAG">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/7-project.png" alt="HybridRAG" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">HybridRAG</h3>
+
+                <p class="project-category">NLP/LLMs</p>
+
+              </a>
+            </li>
+           
+
+
+            <li class="project-item  active" data-filter-item data-category="nlp/llms">
+              <a href="https://github.com/sarabesh/SkinNER">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/6-project.png" alt="skinner" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Skin NER</h3>
+
+                <p class="project-category">NLP/LLMs</p>
+
+              </a>
+            </li>
+
+            
+          
+            <li class="project-item  active" data-filter-item data-category="computer vision">
+              <a href="https://github.com/sarabesh/Algae-Classification">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/1-project.png" alt="Algae Classification" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Algae Classification</h3>
+
+                <p class="project-category">Computer Vision</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://sarabesh.medium.com/fmri-image-reconstruction-using-ridge-regression-e75705203d2e">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Image reconstruction from Brain signals" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Generative AI</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Jan 12, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Image reconstruction from Brain signals</h3>
+
+                  <p class="blog-text">
+                    Reconstructing images from fMRI signals of subjects viewing the visuals, utilizing ridge regression and trained diffusion models.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://sarabesh.medium.com/1-58-bitnet-llm-models-241755cf628e">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">LLMs</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Mar 9, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">1.58 BitNet</h3>
+
+                  <p class="blog-text">
+                    LLMs can now achieve near-FP16 performance while drastically reducing memory usage to just 1.58 bits, making large models more accessible.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.618748664069!2d-86.52183568462115!3d39.169753079527206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886c66a717a8ba89%3A0x7f33b49f8becba4e!2sIndiana%20University%20Bloomington!5e0!3m2!1sen!2sus!4v1712859472873!5m2!1sen!2sus"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="mailto:sneelam@iu.edu" method="POST" enctype="text/plain" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+          
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+          
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
