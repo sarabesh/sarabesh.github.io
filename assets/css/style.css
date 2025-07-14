@@ -319,9 +319,13 @@ main {
   max-height: 112px;
   overflow: hidden;
   transition: var(--transition-2);
+  width: 100%;
 }
 
-.sidebar.active { max-height: 405px; }
+.sidebar.active { 
+  max-height: 405px;
+  overflow-y: auto;
+}
 
 .sidebar-info {
   position: relative;
@@ -329,6 +333,7 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
+  padding-right: 30px;
 }
 
 .avatar-box {
@@ -366,6 +371,7 @@ main {
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
   z-index: 1;
+  white-space: nowrap;
 }
 
 .info_more-btn::before {
@@ -384,7 +390,10 @@ main {
 .info_more-btn:hover::before,
 .info_more-btn:focus::before { background: var(--bg-gradient-yellow-2); }
 
-.info_more-btn span { display: none; }
+.info_more-btn span {
+  display: inline-block;
+  margin-right: 5px;
+}
 
 .sidebar-info_more {
   opacity: 0;
@@ -401,6 +410,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
+  padding: 0 5px;
 }
 
 .contact-item {
@@ -408,11 +418,13 @@ main {
   display: flex;
   align-items: center;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .contact-info {
   max-width: calc(100% - 46px);
   width: calc(100% - 46px);
+  word-break: break-word;
 }
 
 .contact-title {
@@ -1332,9 +1344,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar {
     max-height: 180px;
     margin-bottom: 30px;
+    width: 520px;
   }
 
-  .sidebar.active { max-height: 584px; }
+  .sidebar.active { 
+    max-height: 584px;
+  }
 
   .sidebar-info { gap: 25px; }
 
@@ -1353,11 +1368,13 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .info_more-btn span {
-    display: block;
+    display: inline-block;
     font-size: var(--fs-8);
   }
 
-  .info_more-btn ion-icon { display: none; }
+  .info_more-btn ion-icon {
+    display: none;
+  }
 
   .separator { margin: 32px 0; }
 
