@@ -1,4 +1,11 @@
 // ==========================
+// utility functions
+// ==========================
+const elementToggleFunc = function (elem) {
+  elem.classList.toggle("active");
+}
+
+// ==========================
 // testimonials variables
 // ==========================
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
@@ -102,6 +109,34 @@ for (let i = 0; i < formInputs.length; i++) {
       formBtn.setAttribute("disabled", "");
     }
   });
+}
+
+// ==========================
+// sidebar toggle functionality
+// ==========================
+const sidebar = document.querySelector("[data-sidebar]");
+const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+
+// toggle sidebar function
+const sidebarToggleFunc = function () {
+  sidebar.classList.toggle("active");
+  
+  // Update button text and icon
+  const btnText = sidebarBtn.querySelector("span");
+  const btnIcon = sidebarBtn.querySelector("ion-icon");
+  
+  if (sidebar.classList.contains("active")) {
+    btnText.textContent = "Hide Contacts";
+    btnIcon.setAttribute("name", "chevron-up");
+  } else {
+    btnText.textContent = "Show Contacts";
+    btnIcon.setAttribute("name", "chevron-down");
+  }
+}
+
+// add click event to sidebar button
+if (sidebarBtn) {
+  sidebarBtn.addEventListener("click", sidebarToggleFunc);
 }
 
 // ==========================
