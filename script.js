@@ -1,4 +1,5 @@
 ﻿const revealElements = document.querySelectorAll(".reveal");
+const isSmallViewport = window.matchMedia("(max-width: 680px)").matches;
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -8,7 +9,10 @@ const revealObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.18 }
+  {
+    threshold: isSmallViewport ? 0.04 : 0.18,
+    rootMargin: isSmallViewport ? "0px 0px -6% 0px" : "0px"
+  }
 );
 
 revealElements.forEach((element) => revealObserver.observe(element));
@@ -218,3 +222,4 @@ if (timelineItems.length > 0) {
   );
   timelineItems.forEach((item) => timelineObserver.observe(item));
 }
+

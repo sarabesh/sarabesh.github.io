@@ -138,12 +138,19 @@ body {
 }
 
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   backdrop-filter: blur(10px);
   background: rgba(12, 20, 28, 0.72);
   border-bottom: 1px solid var(--border);
   z-index: 20;
+}
+
+main {
+  padding-top: 68px;
 }
 
 .nav-wrap {
@@ -986,7 +993,7 @@ h1 {
   }
 
   .hero {
-    padding-top: 4.2rem;
+    padding-top: 2.2rem;
   }
 
   .hero-portrait {
@@ -1017,6 +1024,25 @@ h1 {
   .mini-svg {
     width: 64px;
     height: 38px;
+  }
+
+  .section {
+    padding-top: 1.15rem;
+  }
+
+  #experience {
+    padding-bottom: 0.2rem;
+  }
+
+  #projects {
+    margin-top: 0;
+    padding-top: 0.7rem;
+    padding-bottom: 0.2rem;
+  }
+
+  #blogs {
+    margin-top: 0;
+    padding-top: 0.7rem;
   }
 }
 
