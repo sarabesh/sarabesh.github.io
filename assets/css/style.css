@@ -48,25 +48,36 @@
     hsl(0, 0%, 25%) 0%, 
     hsla(0, 0%, 25%, 0) 50%
   );
-  --text-gradient-yellow: linear-gradient(
-    to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
+  --text-gradient-blue: linear-gradient(
+    to right,
+    hsl(210, 100%, 50%),
+    hsl(180, 100%, 50%)
+  );
+  
+  --text-gradient-purple: linear-gradient(
+    to right,
+    hsl(270, 100%, 60%),
+    hsl(210, 100%, 50%)
   );
 
   /* solid */
 
-  --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
+  --jet: hsl(220, 26%, 22%);
+  --onyx: hsl(220, 26%, 17%);
+  --eerie-black-1: hsl(220, 26%, 13%);
+  --eerie-black-2: hsl(220, 26%, 12%);
+  --smoky-black: hsl(220, 26%, 7%);
   --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 0%, 98%);
+  --white-2: hsl(220, 20%, 98%);
+  --primary-blue: hsl(210, 100%, 50%);
+  --primary-blue-light: hsl(210, 100%, 60%);
+  --primary-blue-dark: hsl(210, 100%, 40%);
+  --accent-cyan: hsl(180, 100%, 50%);
+  --accent-purple: hsl(270, 100%, 60%);
   --orange-yellow-crayola: hsl(45, 100%, 72%);
   --vegas-gold: hsl(45, 54%, 58%);
-  --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --light-gray: hsl(220, 15%, 84%);
+  --light-gray-70: hsla(220, 15%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
   /**
@@ -75,6 +86,7 @@
 
   /* font-family */
   --ff-poppins: 'Poppins', sans-serif;
+  --ff-inter: 'Inter', sans-serif;
 
   /* font-size */
   --fs-1: 24px;
@@ -189,7 +201,7 @@ article {
 
 .icon-box {
   position: relative;
-  background: var(--border-gradient-onyx);
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-cyan) 100%);
   width: 32px;
   height: 32px;
   border-radius: 10px;
@@ -197,19 +209,31 @@ article {
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  color: var(--orange-yellow-crayola);
-  box-shadow: var(--shadow-1);
+  color: var(--white);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
   z-index: 1;
   flex-shrink: 0;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .icon-box::before {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--eerie-black-1);
+  background: linear-gradient(135deg, var(--primary-blue-dark) 0%, var(--accent-purple) 100%);
   border-radius: inherit;
   z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.icon-box:hover {
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
+}
+
+.icon-box:hover::before {
+  opacity: 1;
 }
 
 .icon-box ion-icon { --ionicon-stroke-width: 35px; }
@@ -269,7 +293,7 @@ article.active {
   left: 0;
   width: 30px;
   height: 3px;
-  background: var(--text-gradient-yellow);
+  background: var(--text-gradient-blue);
   border-radius: 3px;
 }
 
@@ -336,9 +360,14 @@ main {
   margin-bottom: 15px;
   max-height: 112px;
   overflow: hidden;
-  transition: var(--transition-2);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   width: 100%;
   box-sizing: border-box;
+  border-radius: 20px;
+  background: linear-gradient(135deg, var(--eerie-black-2) 0%, rgba(255, 255, 255, 0.02) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
 }
 
 .sidebar.active { 
@@ -346,7 +375,12 @@ main {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
-  scrollbar-color: rgba(255, 107, 53, 0.3) transparent;
+  scrollbar-color: rgba(0, 123, 255, 0.3) transparent;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.3),
+    0 8px 16px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 
 .sidebar.active::-webkit-scrollbar {
@@ -358,12 +392,12 @@ main {
 }
 
 .sidebar.active::-webkit-scrollbar-thumb {
-  background: rgba(255, 107, 53, 0.3);
+  background: rgba(0, 123, 255, 0.3);
   border-radius: 2px;
 }
 
 .sidebar.active::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 107, 53, 0.5);
+  background: rgba(0, 123, 255, 0.5);
 }
 
 .sidebar-info {
@@ -410,15 +444,29 @@ main {
   position: absolute;
   top: -15px;
   right: -15px;
-  border-radius: 0 15px;
+  border-radius: 50px;
   font-size: 13px;
-  color: var(--orange-yellow-crayola);
-  background: var(--border-gradient-onyx);
-  padding: 10px;
-  box-shadow: var(--shadow-2);
-  transition: var(--transition-1);
+  font-weight: 600;
+  color: var(--white);
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-cyan) 100%);
+  padding: 12px 20px;
+  box-shadow: 
+    0 8px 25px rgba(0, 123, 255, 0.3),
+    0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   z-index: 1;
   white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  min-height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .info_more-btn::before {
@@ -431,11 +479,25 @@ main {
   z-index: -1;
 }
 
-.info_more-btn:hover,
-.info_more-btn:focus { background: var(--bg-gradient-yellow-1); }
+.info_more-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 
+    0 12px 35px rgba(0, 123, 255, 0.4),
+    0 8px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--primary-blue) 100%);
+}
 
-.info_more-btn:hover::before,
-.info_more-btn:focus::before { background: var(--bg-gradient-yellow-2); }
+.info_more-btn:active {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 
+    0 6px 20px rgba(0, 123, 255, 0.3),
+    0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.info_more-btn:focus {
+  outline: 3px solid rgba(0, 123, 255, 0.3);
+  outline-offset: 3px;
+}
 
 .info_more-btn span {
   display: inline-block;
@@ -492,7 +554,13 @@ main {
   color: var(--light-gray-70);
   font-size: var(--fs-8);
   text-transform: uppercase;
-  margin-bottom: 2px;
+  letter-spacing: 1.5px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  background: var(--text-gradient-blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .contact-info :is(.contact-link, time, address) {
