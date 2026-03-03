@@ -28,14 +28,20 @@
   <header class="header">
     <div class="container nav-wrap">
       <a class="logo" href="#top">SR</a>
-      <nav class="nav">
-        <a href="#experience" aria-label="Experience"><span class="nav-icon" aria-hidden="true">E</span><span class="nav-label">Experience</span></a>
-        <a href="#projects" aria-label="Projects"><span class="nav-icon" aria-hidden="true">P</span><span class="nav-label">Projects</span></a>
-        <a href="#blogs" aria-label="Blogs"><span class="nav-icon" aria-hidden="true">B</span><span class="nav-label">Blogs</span></a>
-        <a href="#skills" aria-label="Skills"><span class="nav-icon" aria-hidden="true">S</span><span class="nav-label">Skills</span></a>
-        <a href="assets/Sarabesh_Ravindranath_Resume.pdf" download aria-label="Resume"><span class="nav-icon" aria-hidden="true">R</span><span class="nav-label">Resume</span></a>
-        <a href="#contact" aria-label="Contact"><span class="nav-icon" aria-hidden="true">C</span><span class="nav-label">Contact</span></a>
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme"><span class="theme-icon" aria-hidden="true">*</span><span class="theme-label">Light Mode</span></button>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme">
+          <span class="theme-track" aria-hidden="true"><span class="theme-thumb"></span></span>
+          <span class="theme-label">Dark</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation menu" aria-controls="siteNav" aria-expanded="false">Menu</button>
+      </div>
+      <nav class="nav" id="siteNav">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#skills">Skills</a>
+        <a href="assets/Sarabesh_Ravindranath_Resume.pdf" download>Resume</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
