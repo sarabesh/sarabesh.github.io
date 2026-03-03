@@ -41,6 +41,7 @@ if (year) {
 }
 
 const themeToggle = document.getElementById("themeToggle");
+const themeToggleLabel = themeToggle ? themeToggle.querySelector(".theme-label") : null;
 const THEME_KEY = "portfolio_theme";
 const savedTheme = localStorage.getItem(THEME_KEY);
 const hourNow = new Date().getHours();
@@ -49,11 +50,13 @@ const initialTheme = savedTheme || (isDaytime ? "light" : "dark");
 document.body.setAttribute("data-theme", initialTheme);
 
 function updateThemeToggleLabel() {
-  if (!themeToggle) {
+  if (!themeToggle || !themeToggleLabel) {
     return;
   }
   const isLight = document.body.getAttribute("data-theme") === "light";
-  themeToggle.textContent = isLight ? "Dark Mode" : "Light Mode";
+  const nextLabel = isLight ? "Dark Mode" : "Light Mode";
+  themeToggleLabel.textContent = nextLabel;
+  themeToggle.setAttribute("aria-label", `Toggle color theme (${nextLabel})`);
 }
 
 if (themeToggle) {
