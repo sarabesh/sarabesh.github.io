@@ -1,344 +1,259 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Sarabesh Ravindranath, AI/ML Engineer focused on MLOps, computer vision, RAG systems, and scalable production ML.">
-  <title>Sarabesh Ravindranath | AI/ML Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Sarabesh Ravindranath, an AI/ML engineer building production ML, MLOps, computer vision, and retrieval systems.">
+  <title>Sarabesh Ravindranath — AI/ML Engineer</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>◌</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#top">Skip to main content</a>
-  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
-  <canvas class="ambient-canvas" id="ambientCanvas" aria-hidden="true"></canvas>
-  <div class="ambient-topics" aria-hidden="true">
-    <span style="--delay:0s;--x:8%;--y:18%;">hybrid-rag</span>
-    <span style="--delay:1.2s;--x:78%;--y:22%;">vector-db</span>
-    <span style="--delay:2.1s;--x:16%;--y:44%;">ppo</span>
-    <span style="--delay:0.7s;--x:82%;--y:50%;">diffusion</span>
-    <span style="--delay:1.8s;--x:64%;--y:72%;">mlops</span>
-    <span style="--delay:2.6s;--x:28%;--y:78%;">bert-finetune</span>
-  </div>
-  <div class="bg-shape bg-shape-a"></div>
-  <div class="bg-shape bg-shape-b"></div>
+  <a class="skip-link" href="#about">Skip to main content</a>
 
-  <header class="header">
-    <div class="container nav-wrap">
-      <a class="logo" href="#top">SR</a>
-      <div class="header-actions">
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme">
-          <span class="theme-track" aria-hidden="true"><span class="theme-thumb"></span></span>
-          <span class="theme-label">Dark</span>
-        </button>
-        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation menu" aria-controls="siteNav" aria-expanded="false">Menu</button>
-      </div>
-      <nav class="nav" id="siteNav">
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#blogs">Blogs</a>
-        <a href="#skills">Skills</a>
-        <a href="assets/Sarabesh_Ravindranath_Resume.pdf" download>Resume</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode">
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5V5M12 19v2.5M4.2 4.2 6 6M18 18l1.8 1.8M2.5 12H5M19 12h2.5M4.2 19.8 6 18M18 6l1.8-1.8"/></svg>
+  </button>
 
-  <main id="top">
-    <section class="hero container reveal">
-      <div class="hero-layout">
-        <div class="hero-copy">
-          <p class="eyebrow">Actively Interviewing | US AI/ML Roles</p>
-          <h1>Sarabesh Neelamegham Ravindranath</h1>
-          <p class="lead">
-            AI/ML Engineer with 4+ years across MLOps, DevOps, computer vision, and retrieval systems.
-            I build production-ready ML pipelines and ship reliable models from experimentation to deployment.
-          </p>
-          <div class="hero-meta">
-            <span>Bloomington, Indiana</span>
-            <span>MS Data Science, Indiana University</span>
-          </div>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="mailto:sarabeshnr@gmail.com">Email Me</a>
-            <a class="btn btn-ghost" href="assets/Sarabesh_Ravindranath_Resume.pdf" download>Resume (PDF)</a>
-            <a class="btn btn-ghost" href="https://github.com/sarabesh" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="btn btn-ghost" href="https://www.linkedin.com/in/sarabesh" target="_blank" rel="noreferrer">LinkedIn</a>
-          </div>
-        </div>
-        <div class="hero-gallery" aria-label="Target roles">
-          <figure class="hero-portrait" data-parallax="-0.018">
-            <picture>
-              <source srcset="assets/profile-photo.webp" type="image/webp">
-              <img src="assets/profile-photo.jpg" alt="Portrait of Sarabesh Ravindranath in a navy suit" loading="eager" decoding="async">
-            </picture>
-          </figure>
-          <div class="hero-shot tone-rag role-aiml" data-parallax="-0.01">
-            <span>AI/ML Engineer</span><small>production ml systems</small>
-          </div>
-          <div class="hero-shot tone-db role-mlops" data-parallax="-0.008">
-            <span>MLOps Engineer</span><small>training, deploy, monitor</small>
-          </div>
-          <div class="hero-shot tone-cv role-scientist" data-parallax="-0.012">
-            <span>Applied Scientist</span><small>vision + nlp research to prod</small>
-          </div>
-          <div class="hero-shot tone-rl role-rag" data-parallax="-0.009">
-            <span>LLM/RAG Engineer</span><small>retrieval, reranking, eval</small>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container recruiter-snapshot reveal" aria-label="Recruiter snapshot">
-      <h2>Recruiter Snapshot</h2>
+  <div class="page">
+    <nav class="side" aria-label="Portfolio sections">
       <ul>
-        <li>Target Roles: AI/ML Engineer, MLOps Engineer, Applied Scientist, LLM/RAG Engineer</li>
-        <li>Education: MS Data Science, Indiana University Bloomington (GPA 3.90/4.00)</li>
-        <li>Location: Bloomington, Indiana | Open to relocation within the US</li>
+        <li><a href="#about" data-nav>about</a></li>
+        <li><a href="#experience" data-nav>experience</a></li>
+        <li><a href="#skills" data-nav>skills</a></li>
+        <li><a href="#projects" data-nav>projects</a></li>
+        <li><a href="#writing" data-nav>writing</a></li>
+        <li><a href="#education" data-nav>education</a></li>
+        <li><a href="#connect" data-nav>connect</a></li>
       </ul>
-    </section>
+    </nav>
 
-    <section class="container visa-notice reveal" aria-label="Work authorization notice">
-      <p><strong>Work Authorization Notice:</strong> F-1 OPT valid through <strong>June 2026</strong>. Eligible for <strong>24-month STEM OPT extension</strong>. Requires <strong>H-1B sponsorship</strong> thereafter (Change of Status).</p>
-    </section>
+    <main>
+      <header id="about" class="intro">
+        <div>
+          <h1>Sarabesh Ravindranath</h1>
+          <p class="role">AI/ML Engineer · Bloomington, Indiana</p>
+          <p class="tagline">I build reliable machine-learning systems, from experiments and retrieval pipelines to deployment and observability.</p>
+        </div>
+        <div class="portrait-frame">
+          <img class="portrait" src="assets/prof.jpg" alt="Sarabesh Ravindranath" width="120" height="150">
+        </div>
+      </header>
 
-    <section id="experience" class="container section reveal">
-      <div class="section-head">
-        <p class="eyebrow">Experience</p>
-        <h2>Recent Roles</h2>
+      <div class="about-copy">
+        <p>
+          I’m an AI/ML engineer with 4+ years across MLOps, DevOps, computer vision, and retrieval systems. I enjoy taking models beyond notebooks: building repeatable training pipelines, automating delivery, and making production behavior measurable.
+        </p>
+        <p>
+          Most recently, I’ve been a research assistant at Indiana University’s School of Optometry, where I build reproducible 3D terrain-reconstruction and complexity-modeling workflows and train camera-orientation models on IU supercomputing systems. Before that, I worked on ML training and observability at Musco Lighting and shipped multi-cloud platform automation at VMware and Presidio.
+        </p>
+        <p>
+          I finished my MS in Data Science at Indiana University Bloomington with a 3.90 GPA. I’m currently interviewing for full-time AI/ML, MLOps, applied scientist, and LLM/RAG roles in the United States, and I’m open to relocating.
+        </p>
+        <p class="note">
+          Work authorization: F-1 STEM OPT with EAD valid through June 2028. H-1B sponsorship will be required thereafter for continued work authorization or change of status.
+        </p>
+        <p>
+          You can find my work on <a href="https://github.com/sarabesh" target="_blank" rel="noreferrer">GitHub</a>, connect with me on <a href="https://www.linkedin.com/in/sarabesh" target="_blank" rel="noreferrer">LinkedIn</a>, or reach me by <a href="mailto:sarabeshnr@gmail.com">email</a>. You can also <a href="assets/resume.pdf" download>download my résumé</a>.
+        </p>
       </div>
-      <div class="timeline">
-        <article class="timeline-item">
-          <h3>Research Assistant, Indiana University School of Optometry</h3>
-          <p class="meta">Bloomington, IN | Jan 2025 - Present</p>
-          <ul>
-            <li>Built automated point-cloud analysis pipelines in Python + Open3D.</li>
-            <li>Improved 3D terrain reconstruction throughput by 25% with optimized preprocessing and meshing.</li>
-          </ul>
-        </article>
-        <article class="timeline-item">
-          <h3>Emerging Tech Intern (AI Specialist), Musco Lighting</h3>
-          <p class="meta">Des Moines, IA | May 2024 - Aug 2024</p>
-          <ul>
-            <li>Created modular MLOps pipeline with DVC and GitLab CI for retraining automation.</li>
-            <li>Integrated YOLOv5 training and inference with MLflow tracking and model observability.</li>
-          </ul>
-        </article>
-        <article class="timeline-item">
-          <h3>DevOps Engineer, MTS II, VMware</h3>
-          <p class="meta">Bangalore, India | Feb 2022 - Jun 2023</p>
-          <ul>
-            <li>Shipped multi-cloud install and validation automation for Tanzu Application Platform.</li>
-            <li>Expanded Go-based E2E test coverage from 20% to 75%.</li>
-          </ul>
-        </article>
-        <article class="timeline-item">
-          <h3>Cloud Engineer, Presidio</h3>
-          <p class="meta">Chennai, India | May 2019 - Jan 2022</p>
-          <ul>
-            <li>Built enterprise CI/CD and IaC solutions across AWS, Terraform, and Kubernetes.</li>
-            <li>Reduced build times by 35% by migrating Jenkins workers to Kubernetes pods.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
 
-    <section id="projects" class="container section reveal">
-      <div class="section-head">
-        <p class="eyebrow">Projects</p>
-        <h2>Selected Projects for AI/ML Roles</h2>
-      </div>
-      <div class="filters" role="group" aria-label="Project filters">
-        <button class="filter is-active" data-filter="all">All</button>
-        <button class="filter" data-filter="rag">RAG</button>
-        <button class="filter" data-filter="mlops">MLOps</button>
-        <button class="filter" data-filter="cv">Vision</button>
-        <button class="filter" data-filter="rl">RL</button>
-        <button class="filter" data-filter="nlp">NLP</button>
-      </div>
-      <div class="project-grid">
-        <article class="project-card" data-tags="rag mlops">
-          <div class="project-thumb"><div class="project-art tone-rag sig-rag"><span>RAG</span></div></div>
-          <h3>HybridRAG</h3>
-          <p>Production-style hybrid retrieval architecture combining vector and graph search for higher-precision LLM grounding.</p>
-          <p class="project-meta">Jupyter Notebook | 38 stars</p>
-          <a href="https://github.com/sarabesh/HybridRAG" target="_blank" rel="noreferrer">View Repository</a>
-        </article>
-        <article class="project-card" data-tags="rag mlops">
-          <div class="project-thumb"><div class="project-art tone-db sig-db"><span>VDB</span></div></div>
-          <h3>PuppyDB</h3>
-          <p>Custom vector database built with LMDB persistence and ANN indexing to understand high-performance embedding retrieval.</p>
-          <p class="project-meta">Python | 4 stars</p>
-          <a href="https://github.com/sarabesh/PuppyDB" target="_blank" rel="noreferrer">View Repository</a>
-        </article>
-        <article class="project-card" data-tags="rl">
-          <div class="project-thumb"><div class="project-art tone-rl sig-ppo"><span>PPO</span></div></div>
-          <h3>GridWorld-PPO</h3>
-          <p>Reinforcement learning path-planning with PPO in dynamic grid environments, including reward shaping and policy evaluation.</p>
-          <p class="project-meta">Python</p>
-          <a href="https://github.com/sarabesh/GridWorld-PPO" target="_blank" rel="noreferrer">View Repository</a>
-        </article>
-        <article class="project-card" data-tags="cv">
-          <div class="project-thumb"><div class="project-art tone-cv sig-recon"><span>CV</span></div></div>
-          <h3>Neural-Recon</h3>
-          <p>fMRI-to-image reconstruction pipeline using diffusion models and CLIP-aligned features for vision-neuroscience experimentation.</p>
-          <p class="project-meta">Jupyter Notebook</p>
-          <a href="https://github.com/sarabesh/Neural-Recon" target="_blank" rel="noreferrer">View Repository</a>
-        </article>
-        <article class="project-card" data-tags="rag nlp">
-          <div class="project-thumb"><div class="project-art tone-rag sig-rerank"><span>RERANK</span></div></div>
-          <h3>Retrieval-Reranker</h3>
-          <p>Retrieval and reranking benchmarking across BEIR-style workflows to improve relevance and downstream answer quality.</p>
-          <p class="project-meta">Jupyter Notebook</p>
-          <a href="https://github.com/sarabesh/Retrieval-Reranker" target="_blank" rel="noreferrer">View Repository</a>
-        </article>
-        <article class="project-card" data-tags="mlops cv rag">
-          <div class="project-thumb"><div class="project-art tone-mix sig-recsys"><span>RECSYS</span></div></div>
-          <h3>reddit-recsys</h3>
-          <p>Multimodal recommendation system using CLIP embeddings and vector search with workflow orchestration for real-time retrieval.</p>
-          <p class="project-meta">Python</p>
-          <a href="https://github.com/sarabesh/reddit-recsys" target="_blank" rel="noreferrer">View Repository</a>
-        </article>
-        <article class="project-card" data-tags="nlp mlops">
-          <div class="project-thumb"><div class="project-art tone-nlp sig-finetune"><span>SFT/RLHF</span></div></div>
-          <h3>Finetuning</h3>
-          <p>Baseline repository for LLM post-training (SFT/RLHF-style) and evaluation workflows with reproducible experimentation.</p>
-          <p class="project-meta">Jupyter Notebook</p>
-          <a href="https://github.com/sarabesh/Finetuning" target="_blank" rel="noreferrer">View Repository</a>
-        </article>
-        <article class="project-card" data-tags="nlp">
-          <div class="project-thumb"><div class="project-art tone-nlp sig-transformer"><span>TRANSFORMER</span></div></div>
-          <h3>exploring-transformers</h3>
-          <p>Hands-on transformer architecture implementation with tokenizer, positional encoding, and training-focused experiments.</p>
-          <p class="project-meta">Python</p>
-          <a href="https://github.com/sarabesh/exploring-transformers" target="_blank" rel="noreferrer">View Repository</a>
-        </article>
-        <article class="project-card" data-tags="cv">
-          <div class="project-thumb"><div class="project-art tone-cv sig-deepvo"><span>DEEPVO</span></div></div>
-          <h3>mono-cam-DeepVO</h3>
-          <p>Reimplementation of DeepVO for monocular camera motion estimation and robust trajectory prediction in vision pipelines.</p>
-          <p class="project-meta">Jupyter Notebook</p>
-          <a href="https://github.com/sarabesh/mono-cam-DeepVO" target="_blank" rel="noreferrer">View Repository</a>
-        </article>
-        <article class="project-card" data-tags="nlp mlops">
-          <div class="project-thumb"><div class="project-art tone-nlp sig-bertops"><span>BERT OPS</span></div></div>
-          <h3>sentiment-analysis-finetuning-and-deployment</h3>
-          <p>End-to-end BERT fine-tuning, API deployment, monitoring, and automated retraining workflow for production MLOps simulation.</p>
-          <p class="project-meta">Jupyter Notebook</p>
-          <a href="https://github.com/sarabesh/sentiment-analysis-finetuning-and-deployment" target="_blank" rel="noreferrer">View Repository</a>
-        </article>
-        <article class="project-card" data-tags="nlp cv">
-          <div class="project-thumb"><div class="project-art tone-nlp sig-ner"><span>NER</span></div></div>
-          <h3>SkinNER</h3>
-          <p>Clinical NER pipeline for skin-disease tagging using spaCy and BERT fine-tuning with comparative model evaluation.</p>
-          <p class="project-meta">Jupyter Notebook</p>
-          <a href="https://github.com/sarabesh/SkinNER" target="_blank" rel="noreferrer">View Repository</a>
-        </article>
-        <article class="project-card" data-tags="cv">
-          <div class="project-thumb"><div class="project-art tone-cv sig-vit"><span>VIT</span></div></div>
-          <h3>Algae-Classification</h3>
-          <p>Computer vision classification workflow for algae detection and water-quality use cases using deep learning approaches.</p>
-          <p class="project-meta">Jupyter Notebook</p>
-          <a href="https://github.com/sarabesh/Algae-Classification" target="_blank" rel="noreferrer">View Repository</a>
-        </article>
-      </div>
-    </section>
+      <section id="experience">
+        <h2>Experience</h2>
 
-    <section id="blogs" class="container section reveal">
-      <div class="section-head">
-        <p class="eyebrow">Blogs</p>
-        <h2>Writing & Technical Notes</h2>
-      </div>
-      <div class="blog-grid">
-        <article class="blog-card">
-          <p class="blog-tag">Vector Databases</p>
-          <h3>How I Built a Vector DB with HNSW from Scratch</h3>
-          <p>Building PuppyDB from scratch using HNSW and ANN search fundamentals.</p>
-          <a href="https://sarabesh.medium.com/how-i-built-a-vector-db-with-hnsw-from-scratch-a311b6eac082" target="_blank" rel="noreferrer">Read on Medium</a>
+        <article class="role-item">
+          <div class="role-head">
+            <span><span class="role-title">Research Assistant</span> <span class="separator">·</span> <span class="role-org">Indiana University School of Optometry</span></span>
+            <span class="role-date">Jan 2025 — present</span>
+          </div>
+          <div class="role-desc">
+            <ul>
+              <li>Collaborate with faculty on the Walking Project, building reproducible 3D terrain-reconstruction and complexity-modeling workflows from data collected across 10+ trails and 8 subjects using RealityCapture.</li>
+              <li>Reconstructed 10+ scenes from binocular and monocular imagery, creating terrain-analysis assets for scene-understanding and surface-complexity experiments.</li>
+              <li>Plan field data collection and evaluate multimodal capture tooling including Meta Aria eye-tracking glasses, drone and overhead cameras, GPS trackers, and Shadow IMU body suits.</li>
+              <li>Train and evaluate single-image camera-orientation models on the Nymeria dataset using IU supercomputing workflows, SLURM job orchestration, environment modules, and distributed training as needed.</li>
+            </ul>
+          </div>
         </article>
-        <article class="blog-card">
-          <p class="blog-tag">Generative AI</p>
-          <h3>Image Reconstruction from Brain Signals</h3>
-          <p>Reconstructing visuals from fMRI signals using ridge regression and diffusion models.</p>
-          <a href="https://sarabesh.medium.com/fmri-image-reconstruction-using-ridge-regression-e75705203d2e" target="_blank" rel="noreferrer">Read on Medium</a>
-        </article>
-        <article class="blog-card">
-          <p class="blog-tag">LLMs</p>
-          <h3>1.58 BitNet</h3>
-          <p>How BitNet-style quantization can reduce memory while preserving strong LLM performance.</p>
-          <a href="https://sarabesh.medium.com/1-58-bitnet-llm-models-241755cf628e" target="_blank" rel="noreferrer">Read on Medium</a>
-        </article>
-      </div>
-      <p class="blog-more"><a href="https://sarabesh.medium.com/" target="_blank" rel="noreferrer">View all posts on Medium</a></p>
-    </section>
 
-    <section id="skills" class="container section reveal">
-      <div class="section-head">
-        <p class="eyebrow">Skills</p>
-        <h2>Technical Stack</h2>
-      </div>
-      <div class="skills-grid">
-        <article>
-          <h3>ML / AI</h3>
-          <p>PyTorch, TensorFlow, Scikit-learn, Hugging Face, LangChain, Open3D, TensorRT, YOLOv5</p>
+        <article class="role-item">
+          <div class="role-head">
+            <span><span class="role-title">Emerging Tech Intern, AI Specialist</span> <span class="separator">·</span> <span class="role-org">Musco Lighting</span></span>
+            <span class="role-date">May 2024 — Aug 2024</span>
+          </div>
+          <div class="role-desc">
+            <ul>
+              <li>Developed a modular MLOps pipeline with DVC and GitLab CI for dataset versioning, validation, retraining, and model promotion, improving iteration speed by 40%.</li>
+              <li>Implemented YOLOv5 training and batch-inference workflows integrated with MLflow for experiment tracking, artifact management, model comparison, and performance visibility.</li>
+              <li>Designed event-driven dataset synchronization between NFS and S3, reducing data latency by 80% and improving availability for downstream ML workflows.</li>
+              <li>Enhanced production ML observability with MLflow dashboards, drift signals, and data-change alerts to strengthen model lifecycle governance.</li>
+            </ul>
+          </div>
         </article>
-        <article>
-          <h3>MLOps / Infra</h3>
-          <p>DVC, MLflow, SageMaker, Airflow, Prefect, Argo CD, Docker, Kubernetes, Terraform</p>
-        </article>
-        <article>
-          <h3>Cloud / DevOps</h3>
-          <p>AWS (Lambda, ECS, EKS, RDS, S3, Step Functions), GitHub Actions, GitLab CI/CD, Jenkins, Helm, Tanzu</p>
-        </article>
-        <article>
-          <h3>Languages</h3>
-          <p>Python, Go, C++, Java, Groovy, Flask, Spring Boot</p>
-        </article>
-        <article>
-          <h3>Databases</h3>
-          <p>MySQL, DynamoDB, Neo4j, Qdrant, PuppyDB</p>
-        </article>
-        <article>
-          <h3>AI Domains</h3>
-          <p>Computer Vision, NLP, Reinforcement Learning, Retrieval-Augmented Generation (RAG)</p>
-        </article>
-      </div>
-    </section>
 
-    <section class="container section reveal">
-      <div class="section-head">
-        <p class="eyebrow">Education & Certifications</p>
-        <h2>Credentials</h2>
-      </div>
-      <div class="credentials">
-        <p><strong>MS in Data Science</strong>, Indiana University Bloomington (Aug 2023 - May 2025), GPA 3.90/4.00</p>
-        <p><strong>BE in Computer Science</strong>, Anna University (Jul 2015 - Apr 2019), GPA 8.39/10.00</p>
-        <p><strong>Certifications:</strong> AWS SAA, CKA, CKS, HashiCorp Terraform Associate</p>
-        <p><strong>Work Authorization (US):</strong> F-1 OPT valid through June 2026. Eligible for 24-month STEM OPT extension. Requires H-1B sponsorship thereafter (Change of Status).</p>
-      </div>
-    </section>
+        <article class="role-item">
+          <div class="role-head">
+            <span><span class="role-title">DevOps Engineer, MTS II</span> <span class="separator">·</span> <span class="role-org">VMware</span></span>
+            <span class="role-date">Feb 2022 — Jun 2023</span>
+          </div>
+          <div class="role-desc">
+            <ul>
+              <li>Contributed to the VMware Tanzu Application Platform release team, automating multi-cloud installation and validation pipelines across EKS, AKS, and TKGS.</li>
+              <li>Designed and implemented Go-based end-to-end validation suites, increasing automated test coverage from 20% to 75% across platform-release workflows.</li>
+              <li>Integrated CI/CD workflows into Helm-based Kubernetes infrastructure, improving release reliability and reducing manual validation overhead.</li>
+              <li>Partnered with platform, QA, and release teams to optimize Kubernetes deployments, version-control integration, automated environment validation, and release readiness.</li>
+            </ul>
+          </div>
+        </article>
 
-    <section id="contact" class="container section cta reveal">
-      <h2>Let's Build Production AI Systems</h2>
-      <p>Open to full-time AI/ML and MLOps roles in the US. Available to interview immediately.</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="mailto:sarabeshnr@gmail.com">sarabeshnr@gmail.com</a>
-        <a class="btn btn-ghost" href="tel:+19303334115">+1 (930) 333-4115</a>
-        <a class="btn btn-ghost" href="assets/Sarabesh_Ravindranath_Resume.pdf" download>Download Resume</a>
-        <button class="btn btn-ghost copy-btn" id="copyEmailBtn" type="button">Copy Email</button>
-      </div>
-    </section>
-  </main>
+        <article class="role-item">
+          <div class="role-head">
+            <span><span class="role-title">Cloud Engineer</span> <span class="separator">·</span> <span class="role-org">Presidio</span></span>
+            <span class="role-date">May 2019 — Jan 2022</span>
+          </div>
+          <div class="role-desc">
+            <ul>
+              <li>Architected and deployed enterprise CI/CD pipelines using Jenkins and GitHub Actions, implementing infrastructure as code with Terraform and CloudFormation.</li>
+              <li>Built scalable AWS infrastructure for clients including ViacomCBS, StatsPerform, and WEX, supporting cloud-native deployment, cost optimization, and operational reliability.</li>
+              <li>Led the migration of Jenkins workers to Kubernetes pods, improving resource efficiency and reducing build times by 35%.</li>
+              <li>Developed internal DevOps libraries integrating Slack and Sumo Logic APIs for real-time alerting and monitoring, reducing mean time to recovery.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Sarabesh Ravindranath</p>
-      <p class="built-with">Built with OpenAI Codex + vanilla web stack.</p>
-    </div>
-  </footer>
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-group">
+          <div class="skill-label">Machine learning &amp; AI</div>
+          <div class="skill-list">PyTorch, TensorFlow, scikit-learn, Hugging Face, LangChain, Open3D, TensorRT, YOLOv5</div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">MLOps &amp; infrastructure</div>
+          <div class="skill-list">DVC, MLflow, SageMaker, Airflow, Prefect, Argo CD, Docker, Kubernetes, Terraform</div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Cloud &amp; delivery</div>
+          <div class="skill-list">AWS Lambda, ECS, EKS, RDS, S3, Step Functions, GitHub Actions, GitLab CI/CD, Jenkins, Helm, Tanzu</div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Programming &amp; data</div>
+          <div class="skill-list">Python, Go, C++, Java, Groovy, Flask, Spring Boot, MySQL, DynamoDB, Neo4j, Qdrant</div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Focus areas</div>
+          <div class="skill-list">Computer vision, NLP, reinforcement learning, retrieval-augmented generation, model deployment and monitoring</div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <article class="project">
+          <div class="project-head"><span class="project-title">HybridRAG</span><span class="project-meta">RAG · MLOps</span></div>
+          <p class="project-desc">A production-style hybrid retrieval architecture combining vector and graph search for more precise LLM grounding.</p>
+          <a class="project-link" href="https://github.com/sarabesh/HybridRAG" target="_blank" rel="noreferrer">View repository ↗</a>
+        </article>
+
+        <article class="project">
+          <div class="project-head"><span class="project-title">PuppyDB</span><span class="project-meta">Python · Vector search</span></div>
+          <p class="project-desc">A custom vector database with LMDB persistence and approximate nearest-neighbor indexing, built to explore high-performance embedding retrieval.</p>
+          <a class="project-link" href="https://github.com/sarabesh/PuppyDB" target="_blank" rel="noreferrer">View repository ↗</a>
+        </article>
+
+        <article class="project">
+          <div class="project-head"><span class="project-title">Neural-Recon</span><span class="project-meta">Computer vision · Diffusion</span></div>
+          <p class="project-desc">An fMRI-to-image reconstruction pipeline using diffusion models and CLIP-aligned features for vision-neuroscience experiments.</p>
+          <a class="project-link" href="https://github.com/sarabesh/Neural-Recon" target="_blank" rel="noreferrer">View repository ↗</a>
+        </article>
+
+        <article class="project">
+          <div class="project-head"><span class="project-title">GridWorld-PPO</span><span class="project-meta">Reinforcement learning</span></div>
+          <p class="project-desc">PPO-based path planning in dynamic grid environments, including reward shaping and policy evaluation.</p>
+          <a class="project-link" href="https://github.com/sarabesh/GridWorld-PPO" target="_blank" rel="noreferrer">View repository ↗</a>
+        </article>
+
+        <article class="project">
+          <div class="project-head"><span class="project-title">Retrieval-Reranker</span><span class="project-meta">RAG · NLP</span></div>
+          <p class="project-desc">Retrieval and reranking benchmarks across BEIR-style workflows to improve relevance and downstream answer quality.</p>
+          <a class="project-link" href="https://github.com/sarabesh/Retrieval-Reranker" target="_blank" rel="noreferrer">View repository ↗</a>
+        </article>
+
+        <details class="more-projects">
+          <summary>More projects</summary>
+          <div class="project compact"><a href="https://github.com/sarabesh/reddit-recsys" target="_blank" rel="noreferrer">reddit-recsys</a><span>Multimodal recommendations with CLIP embeddings and vector search.</span></div>
+          <div class="project compact"><a href="https://github.com/sarabesh/Finetuning" target="_blank" rel="noreferrer">Finetuning</a><span>Reproducible LLM post-training and evaluation workflows.</span></div>
+          <div class="project compact"><a href="https://github.com/sarabesh/exploring-transformers" target="_blank" rel="noreferrer">exploring-transformers</a><span>Hands-on transformer architecture and tokenizer experiments.</span></div>
+          <div class="project compact"><a href="https://github.com/sarabesh/mono-cam-DeepVO" target="_blank" rel="noreferrer">mono-cam-DeepVO</a><span>Monocular camera motion estimation and trajectory prediction.</span></div>
+          <div class="project compact"><a href="https://github.com/sarabesh/sentiment-analysis-finetuning-and-deployment" target="_blank" rel="noreferrer">BERT sentiment MLOps</a><span>Fine-tuning, API deployment, monitoring, and automated retraining.</span></div>
+          <div class="project compact"><a href="https://github.com/sarabesh/SkinNER" target="_blank" rel="noreferrer">SkinNER</a><span>Clinical named-entity recognition with spaCy and BERT.</span></div>
+          <div class="project compact"><a href="https://github.com/sarabesh/Algae-Classification" target="_blank" rel="noreferrer">Algae Classification</a><span>Deep-learning classification for algae detection and water quality.</span></div>
+        </details>
+      </section>
+
+      <section id="writing">
+        <h2>Writing</h2>
+        <article class="writing-item">
+          <a href="https://sarabesh.medium.com/how-i-built-a-vector-db-with-hnsw-from-scratch-a311b6eac082" target="_blank" rel="noreferrer">How I built a vector database with HNSW from scratch ↗</a>
+          <p>Building PuppyDB while learning HNSW and approximate nearest-neighbor search fundamentals.</p>
+        </article>
+        <article class="writing-item">
+          <a href="https://sarabesh.medium.com/fmri-image-reconstruction-using-ridge-regression-e75705203d2e" target="_blank" rel="noreferrer">Image reconstruction from brain signals ↗</a>
+          <p>Reconstructing visuals from fMRI signals with ridge regression and diffusion models.</p>
+        </article>
+        <article class="writing-item">
+          <a href="https://sarabesh.medium.com/1-58-bitnet-llm-models-241755cf628e" target="_blank" rel="noreferrer">1.58 BitNet ↗</a>
+          <p>How BitNet-style quantization reduces memory requirements while preserving strong LLM performance.</p>
+        </article>
+        <p class="section-link"><a href="https://sarabesh.medium.com/" target="_blank" rel="noreferrer">All posts on Medium ↗</a></p>
+      </section>
+
+      <section id="education">
+        <h2>Education &amp; credentials</h2>
+        <article class="edu-item">
+          <div class="edu-head"><span class="edu-school">Indiana University Bloomington</span><span class="edu-date">2023 — 2025</span></div>
+          <div class="edu-detail">Master of Science in Data Science · GPA 3.90 / 4.00</div>
+        </article>
+        <article class="edu-item">
+          <div class="edu-head"><span class="edu-school">Anna University</span><span class="edu-date">2015 — 2019</span></div>
+          <div class="edu-detail">Bachelor of Engineering in Computer Science · GPA 8.39 / 10.00</div>
+        </article>
+
+        <div class="cert-list" aria-label="Certifications">
+          <div class="cert"><span>AWS Certified Solutions Architect — Associate</span><span>AWS</span></div>
+          <div class="cert"><span>Certified Kubernetes Administrator</span><span>CNCF</span></div>
+          <div class="cert"><span>Certified Kubernetes Security Specialist</span><span>CNCF</span></div>
+          <div class="cert"><span>Terraform Associate</span><span>HashiCorp</span></div>
+          <div class="cert"><span>NVIDIA-Certified Associate: AI Infrastructure and Operations</span><span>NVIDIA</span></div>
+        </div>
+      </section>
+
+      <section id="connect">
+        <h2>Connect</h2>
+        <p>I’m open to full-time AI/ML and MLOps roles in the United States and available to interview.</p>
+        <p class="connect-links">
+          <a class="icon-link" href="https://github.com/sarabesh" target="_blank" rel="noreferrer" aria-label="Sarabesh on GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.19-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.11 2.91.85.09-.67.35-1.11.63-1.37-2.22-.26-4.56-1.15-4.56-5.09 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.74 0 0 .84-.28 2.75 1.05a9.29 9.29 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.43.2 2.48.1 2.74.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.08.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .28.18.61.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+            GitHub
+          </a>
+          <a class="icon-link" href="https://www.linkedin.com/in/sarabesh" target="_blank" rel="noreferrer" aria-label="Sarabesh on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.94 5a2 2 0 1 1-4-.02 2 2 0 0 1 4 .02zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48z"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:sarabeshnr@gmail.com">Email</a>
+          <a href="assets/resume.pdf" download>Résumé</a>
+        </p>
+        <p class="contact-detail"><a href="mailto:sarabeshnr@gmail.com">sarabeshnr@gmail.com</a> · <a href="tel:+19303334115">+1 930 333 4115</a></p>
+      </section>
+
+      <footer>Sarabesh Ravindranath · last updated <span id="year"></span></footer>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-

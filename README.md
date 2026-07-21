@@ -12,7 +12,7 @@ No build tools required.
 
 Resume download is served from:
 
-- `assets/Sarabesh_Ravindranath_Resume.pdf`
+- `assets/resume.pdf`
 
 ## Run locally
 
