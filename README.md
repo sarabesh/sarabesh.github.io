@@ -16,7 +16,7 @@ Resume download is served from:
 
 ## Run locally
 
-From `z:\projects\profile`:
+From the repository root:
 
 ```powershell
 python -m http.server 8080
@@ -37,4 +37,6 @@ Open `http://localhost:8080`.
 - Add or remove projects in the `Selected GitHub Work` section.
 - Adjust colors and spacing in `styles.css`.
 - Update interactions in `script.js`.
-- Footer includes a `Built with OpenAI Codex` note.
+- Replace `assets/resume.pdf` to update the résumé download.
+- Bump the `?v=` query on `styles.css` and `script.js` in `index.html` after editing them so browsers fetch the new files.
+- `assets/og.jpg` is the link-preview image used by LinkedIn, Slack, etc.
